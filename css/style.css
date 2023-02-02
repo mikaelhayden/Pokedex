@@ -7,38 +7,58 @@
     font-family: 'Oxanium', cursive;
 }
 
-body
-{
+body{
     text-align: center;
-    background-color: linear-gradient(to bottom, #6ab7f5, #fff);
+    background: linear-gradient(to bottom, #09bd30e1, rgb(226, 223, 17));
     min-height: 100vh;
 }
-main
-{
+
+main{
     display: inline-block;
     margin-top: 2%;
     padding: 15px;
+    position: relative;
 }
 
-.pokedex
+.pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemonImage{
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height:18%;
+}
+
+.pokemonData{
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px,5vw, 25px );
+}
+
+.pokemonName
+{
+    color: #3a444d;
+    text-transform: capitalize;
+
+}
+
+.form
+{
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.inputSearch
 {
     width: 100%;
-
-}
-
-.container
-{
-    background-color: black;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.box
-{
-    background-color: rgba(70, 12, 207, 0.863);
-    width: 300px;
-    height: 300px;
+    padding: 4%;
 }
